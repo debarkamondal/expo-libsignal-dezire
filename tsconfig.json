@@ -1,0 +1,11 @@
+{
+  "extends": "expo-module-scripts/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-libsignal-dezire": ["./src/index.ts"]
+    }
+  },
+  "include": ["./src"],
+  "exclude": ["build"]
+}
