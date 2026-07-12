@@ -15,7 +15,7 @@
     "build:android": "bun run ./scripts/cargo-android.ts",
     "build:ios": "bun run ./scripts/cargo-ios.ts --target=ios",
     "build:ios-sim": "bun run ./scripts/cargo-ios.ts --target=ios-sim",
-    "build:all": "bun run build:rust:android && bun run build:rust:ios && bun run build:rust:ios-sim"
+    "build:all": "bun run build:android && bun run build:ios && bun run build:ios-sim"
   },
   "keywords": [
     "react-native",
