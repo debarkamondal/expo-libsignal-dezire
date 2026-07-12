@@ -7,6 +7,6 @@
       "expo-libsignal-dezire": ["./src/index.ts"]
     }
   },
-  "include": ["./src"],
+  "include": ["./src", "index.ts"],
   "exclude": ["build"]
 }
