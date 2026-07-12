@@ -3,3 +3,4 @@ build
 .expo
 libsignal-dezire/target
 *.so
+*.a
