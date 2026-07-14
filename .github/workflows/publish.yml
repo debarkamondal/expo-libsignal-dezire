@@ -46,5 +46,8 @@ jobs:
       - name: Build Native Android & iOS Libraries
         run: bun run build:all
 
+      - name: Update npm
+        run: npm install -g npm@latest
+
       - name: Publish to npm
         run: npm publish --provenance

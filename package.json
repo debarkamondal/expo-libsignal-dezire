@@ -39,12 +39,12 @@
     "expo-module.config.json"
   ],
   "dependencies": {
-    "expo-modules-core": "~2.1.2"
+    "expo-modules-core": "~56.0.20"
   },
   "devDependencies": {
-    "@expo/config-plugins": "~9.0.12",
+    "@expo/config-plugins": "~56.0.12",
     "@types/react": "~18.3.12",
-    "expo-module-scripts": "^4.0.2",
+    "expo-module-scripts": "^56.0.3",
     "typescript": "^5.3.3",
     "bun-types": "^1.2.0"
   },
