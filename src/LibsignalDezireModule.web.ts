@@ -1,6 +1,6 @@
 import { registerWebModule, NativeModule } from "expo";
 
-import { KeyPair, VXEdDSAOutput } from "./LibsignalDezire.types";
+import type { KeyPair, VXEdDSAOutput } from "./LibsignalDezire.types";
 
 class LibsignalDezireModule extends NativeModule {
   async vxeddsaSign(

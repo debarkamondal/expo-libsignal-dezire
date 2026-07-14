@@ -1,6 +1,6 @@
 import { NativeModule, requireNativeModule } from "expo";
 
-import { KeyPair, VXEdDSAOutput, X3DHInitOutput, X3DHResponderOutput, RatchetEncryptResult } from "./LibsignalDezire.types";
+import type { KeyPair, VXEdDSAOutput, X3DHInitOutput, X3DHResponderOutput, RatchetEncryptResult } from "./LibsignalDezire.types";
 
 declare class LibsignalDezireModule extends NativeModule {
   genKeyPair(): Promise<KeyPair>;
