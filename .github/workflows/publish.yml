@@ -44,7 +44,7 @@ jobs:
         run: bun install
 
       - name: Build Native Android & iOS Libraries
-        run: bun run build:all
+        run: bun run build
 
       - name: Update npm
         run: npm install -g npm@latest
