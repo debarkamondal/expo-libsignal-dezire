@@ -1,11 +1,11 @@
 {
   "name": "expo-libsignal-dezire",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Expo Native Module for libsignal-dezire",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "build": "expo-module build",
+    "build": "bun run build:android && bun run build:ios && bun run build:ios-sim",
     "clean": "expo-module clean",
     "lint": "expo-module lint",
     "test": "expo-module test",
@@ -14,8 +14,7 @@
     "expo-module": "expo-module",
     "build:android": "bun run ./scripts/cargo-android.ts",
     "build:ios": "bun run ./scripts/cargo-ios.ts --target=ios",
-    "build:ios-sim": "bun run ./scripts/cargo-ios.ts --target=ios-sim",
-    "build:all": "bun run build:android && bun run build:ios && bun run build:ios-sim"
+    "build:ios-sim": "bun run ./scripts/cargo-ios.ts --target=ios-sim"
   },
   "keywords": [
     "react-native",
@@ -39,10 +38,10 @@
     "expo-module.config.json"
   ],
   "dependencies": {
-    "expo-modules-core": "~56.0.20"
+    "expo-modules-core": "~57.0.6"
   },
   "devDependencies": {
-    "@expo/config-plugins": "~56.0.12",
+    "@expo/config-plugins": "~57.0.5",
     "@types/react": "~18.3.12",
     "expo-module-scripts": "^56.0.3",
     "typescript": "^5.3.3",
